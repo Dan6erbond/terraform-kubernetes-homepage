@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/compare/v1.0.0...v1.0.1) (2023-02-17)
+
+
+### Bug Fixes
+
+* :bug: set base if `base` not configured by user ([0241c06](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/commit/0241c06cb79a0cfc9ed2b09ee0bd5612d016de25))
+
 ## 1.0.0 (2023-02-17)
 
 
