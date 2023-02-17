@@ -252,7 +252,7 @@ resource "kubernetes_config_map" "homepage_config" {
     "services.yaml" = yamlencode(var.services_config)
     "widgets.yaml"  = yamlencode(var.widgets_config)
     "settings.yaml" = yamlencode(
-      merge({ base = "https://${var.host}" }, var.settings)
+      merge(var.settings, { base = var.settings.base == null ? "https://${var.host}" : var.host })
     )
     "bookmarks.yaml"  = yamlencode(var.bookmarks)
     "docker.yaml"     = yamlencode(var.docker_config)
