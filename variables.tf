@@ -83,13 +83,14 @@ variable "settings" {
     background        = optional(string)
     backgroundOpacity = optional(string)
     theme             = optional(string)
-    layout = optional(map(
+    layout = list(
       object({
+        name    = string
         icon    = optional(string)
         style   = optional(string)
         columns = optional(number)
       })
-    ))
+    )
   })
 }
 

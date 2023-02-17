@@ -251,11 +251,16 @@ resource "kubernetes_config_map" "homepage_config" {
   data = {
     "services.yaml" = yamlencode(var.services_config)
     "widgets.yaml"  = yamlencode(var.widgets_config)
-    "settings.yaml" = yamlencode(
-      merge(var.settings, { base = var.settings.base == null ? "https://${var.host}" : var.host })
-    )
-    "bookmarks.yaml"  = yamlencode(var.bookmarks)
-    "docker.yaml"     = yamlencode(var.docker_config)
-    "kubernetes.yaml" = yamlencode(var.kubernetes_config)
+    "settings.yaml" = <<-EOT
+    ${yamlencode(
+    merge({ for k, v in var.settings : k => v if k != "layout" }, {
+      base = var.settings.base == null ? "https://${var.host}" : var.settings.base
+    }))}
+    layout:
+    ${join("\n", [for layout in var.settings.layout : "  \"${layout.name}\": ${jsonencode(layout)}"])}
+    EOT
+  "bookmarks.yaml"  = yamlencode(var.bookmarks)
+  "docker.yaml"     = yamlencode(var.docker_config)
+  "kubernetes.yaml" = yamlencode(var.kubernetes_config)
   }
 }
