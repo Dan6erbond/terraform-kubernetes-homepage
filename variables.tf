@@ -68,6 +68,8 @@ variable "widgets_config" {
     // greeting
     text_size = optional(string, "xl")
     text      = optional(string, "")
+    // logo
+    icon = optional(string, "")
     // kubernetes
     cluster = optional(object({
       show      = optional(bool, false)
