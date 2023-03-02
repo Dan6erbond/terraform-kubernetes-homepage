@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/compare/v1.1.0...v1.2.0) (2023-02-17)
+
+
+### Features
+
+* :sparkles: update layout to use list to maintain ordering ([81acd66](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/commit/81acd6600c8182337e184f2482ab181b657ab5c9))
+
 ## 1.1.0 (2023-02-17)
 
 
