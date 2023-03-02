@@ -65,6 +65,10 @@ variable "widgets_config" {
     cpu    = optional(bool, false)
     memory = optional(bool, false)
     disk   = optional(string)
+    // search
+    provider = optional(any, "")
+    url      = optional(string, "")
+    target   = optional(string, "")
     // greeting
     text_size = optional(string, "xl")
     text      = optional(string, "")
