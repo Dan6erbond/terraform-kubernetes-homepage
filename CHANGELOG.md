@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/compare/v1.2.0...v1.3.0) (2023-03-02)
+
+
+### Features
+
+* :sparkles: add support for Kubernetes widget ([bb1924b](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/commit/bb1924b56d0eea2d33351b40eec2de34bf4d4160))
+
 ## [1.2.0](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/compare/v1.1.0...v1.2.0) (2023-02-17)
 
 
