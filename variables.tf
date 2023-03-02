@@ -65,6 +65,20 @@ variable "widgets_config" {
     cpu    = optional(bool, false)
     memory = optional(bool, false)
     disk   = optional(string)
+    // kubernetes
+    cluster = optional(object({
+      show      = optional(bool, false)
+      cpu       = optional(bool, false)
+      memory    = optional(bool, false)
+      showLabel = optional(bool, false)
+      label     = optional(string, "")
+    }))
+    nodes = optional(object({
+      show      = optional(bool, false)
+      cpu       = optional(bool, false)
+      memory    = optional(bool, false)
+      showLabel = optional(bool, false)
+    }))
     // datetime
     text_size = optional(string)
     format = optional(object({
