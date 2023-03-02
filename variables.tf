@@ -84,6 +84,11 @@ variable "widgets_config" {
       memory    = optional(bool, false)
       showLabel = optional(bool, false)
     }))
+    // unifi_console
+    url      = optional(string, "")
+    username = optional(string, "")
+    password = optional(string, "")
+    site     = optional(string, "")
     // datetime
     text_size = optional(string)
     format = optional(object({
