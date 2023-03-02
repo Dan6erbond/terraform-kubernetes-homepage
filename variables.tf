@@ -65,6 +65,9 @@ variable "widgets_config" {
     cpu    = optional(bool, false)
     memory = optional(bool, false)
     disk   = optional(string)
+    // greeting
+    text_size = optional(string, "xl")
+    text      = optional(string, "")
     // kubernetes
     cluster = optional(object({
       show      = optional(bool, false)
