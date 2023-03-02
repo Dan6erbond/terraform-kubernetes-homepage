@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/compare/v1.3.0...v1.4.0) (2023-03-02)
+
+
+### Features
+
+* :sparkles: add support for greeting widget ([23fcf10](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/commit/23fcf109dbd8814ad8ae07281ce94fd5e5fe6626))
+* :sparkles: add support for logo widget ([debd1b0](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/commit/debd1b02279288c53122f443c1f84d58d02437ed))
+* :sparkles: add support for search widget ([ad8bc66](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/commit/ad8bc665bd8dc50ba736b2d7214793b644c6fc5a))
+* :sparkles: add support for unifi_console widget ([8387813](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/commit/8387813b407c1d8790f8d080a863c693cc13364d))
+
 ## [1.3.0](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-homepage/compare/v1.2.0...v1.3.0) (2023-03-02)
 
 
